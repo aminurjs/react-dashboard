@@ -10,6 +10,7 @@ import Contacts from "./scence/contacts";
 import Invoices from "./scence/invoices";
 import Form from "./scence/form";
 import Calendar from "./scence/calendar/calendar";
+import FAQ from "./scence/faq";
 
 function App() {
   const [theme, colorMode] = useMode();
@@ -30,10 +31,10 @@ function App() {
               <Route path="/invoices" element={<Invoices />} />
               <Route path="/form" element={<Form />} />
               <Route path="/calendar" element={<Calendar />} />
+              <Route path="/faq" element={<FAQ />} />
               {/* <Route path="/bar" element={<Bar />} />
               <Route path="/pie" element={<Pie />} />
               <Route path="/line" element={<Line />} />
-              <Route path="/faq" element={<FAQ />} />
               <Route path="/geography" element={<Geography />} /> */}
             </Routes>
           </main>
