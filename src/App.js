@@ -15,10 +15,12 @@ import Bar from "./scence/bar";
 import Pie from "./scence/pie";
 import Line from "./scence/line";
 import Geography from "./scence/geography";
+import Settings from "./scence/settings";
 
 function App() {
   const [theme, colorMode] = useMode();
   const [isSidebar, setIsSidebar] = useState(true);
+  console.log(theme, colorMode);
 
   return (
     <ColorModeContext.Provider value={colorMode}>
@@ -40,6 +42,7 @@ function App() {
               <Route path="/pie" element={<Pie />} />
               <Route path="/line" element={<Line />} />
               <Route path="/geography" element={<Geography />} />
+              <Route path="/settings" element={<Settings />} />
             </Routes>
           </main>
         </div>
